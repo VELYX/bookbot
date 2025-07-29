@@ -1,0 +1,8 @@
+DEFINE get_book_text
+GET book.txt
+SET book_text as book.txt
+RETURN book_text
+
+DEFINE main
+GET book.txt url
+DISPLAY book.txt
