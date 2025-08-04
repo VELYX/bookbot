@@ -1,5 +1,6 @@
 def book_word_counter(book_path):
-    return len(get_book_text(book_path).split())
+    words = get_book_text(book_path).split()
+    return len(words)
 
 def get_book_text(book_path):
     with open (book_path) as f:
