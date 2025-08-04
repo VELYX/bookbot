@@ -3,6 +3,13 @@ GET book content
 SET book_text string as book content
 RETURN book_text as string
 
-DEFINE main(book_path)
+DEFINE main()
 CALL get_book_text and pass the book_path
 DISPLAY get_book_text result to console
+
+DEFINE word_counter(book_text)
+SET number_of_words EQUAL to SEPARATE book_text
+COUNT words in number_of_words
+RETURN number_of_words
+
+CALL main()
