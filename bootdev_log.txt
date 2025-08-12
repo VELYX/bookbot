@@ -1,0 +1,5 @@
+A new version of the bootdev CLI is available!
+Please run the following command to update:
+  bootdev upgrade
+or
+  go install github.com/bootdotdev/bootdev@v1.20.0
