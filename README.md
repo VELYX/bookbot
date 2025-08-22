@@ -4,7 +4,7 @@ Bookbot is a program that will print out stats on your favourite books and files
 
 *currently only supporting txt files*
 
-## **Features:**  
+## **Features**  
 
 - Word counter  
 - Character counter
