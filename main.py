@@ -1,9 +1,14 @@
+import sys
 from stats import book_word_counter
 from stats import sorting_function
 
 def main():
-    book = "books/frankenstein.txt"
-    # print(get_book_text("books/frankenstein.txt"))
+    if len(sys.argv) != 2:
+        print("Usage: python3 main.py <path_to_book>")
+        sys.exit(1)
+    
+    book = sys.argv[1]
+
     total_words = book_word_counter(book) 
     sorted_list = sorting_function(book)
     print("============ BOOKBOT ============")
