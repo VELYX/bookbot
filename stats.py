@@ -17,3 +17,13 @@ def character_counter(book_path):
         else:
             char_counts[lowercase_char] = 1
     return char_counts
+
+def sort_num(chars):
+    return chars["num"]
+
+def sorting_function(book):
+    dictionary = character_counter(book)
+    sorting_list = [{"char": char, "num": num} for char, num in dictionary.items() if char.isalpha()]
+    sorting_list.sort(reverse=True, key=sort_num)
+    return sorting_list
+
